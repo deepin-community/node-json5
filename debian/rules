@@ -1,0 +1,20 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	node build/unicode.js
+	node ./lib/cli.js -c package.json5
+ifeq (,$(filter nodoc,$(DEB_BUILD_PROFILES)))
+	chmod +x lib/cli.js
+	help2man -N -n 'Command line for the JSON5 Data Interchange Format (JSON5)' lib/cli.js >json5.1
+endif
+
+override_dh_fixperms:
+	dh_fixperms
+	chmod +x debian/node-json5/usr/share/nodejs/json5/lib/cli.js

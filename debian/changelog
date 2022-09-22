@@ -1,0 +1,95 @@
+node-json5 (2.2.0+dfsg-1) unstable; urgency=medium
+
+  * Team upload
+  * Exclude generated files from import
+  * New upstream version 2.2.0+dfsg
+  * Drop ship_typescript_definitions.patch
+  * Build manpage with help2man
+  * Update nodejs dependency => nodejs:any
+
+ -- Yadd <yadd@debian.org>  Tue, 16 Nov 2021 06:36:08 +0100
+
+node-json5 (2.1.3-3) unstable; urgency=medium
+
+  * Team upload
+  * Modernize debian/watch
+  * Fix GitHub tags regex
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix filenamemangle
+  * Switch to node-unicode-14.0.0
+
+ -- Yadd <yadd@debian.org>  Sat, 30 Oct 2021 23:13:59 +0200
+
+node-json5 (2.1.3-2) unstable; urgency=medium
+
+  * Team upload.
+  * Ship TypeScript definitions (Closes: #974072).
+
+ -- Julien Puydt <jpuydt@debian.org>  Mon, 09 Nov 2020 19:24:23 +0100
+
+node-json5 (2.1.3-1) unstable; urgency=medium
+
+  [ Xavier Guimard ]
+  * Team upload
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + node-json5: Add Multi-Arch: foreign.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Use dh-sequence-nodejs
+  * New upstream version 2.1.3
+  * Drop old patches
+  * Rebuild lib/unicode.js using current unicode lib, not 10.0.0
+  * Add lintian override to ignore lib/unicode.js errors (regenerated)
+  * Update dependencies:
+    + dependencies: add node-minimist
+    + add build dependencies to node-regenerate and node-unicode-13.0.0
+    + test dependencies:
+      * replace mocha by node-tap
+      * add node-sinon
+  * Update test
+    + remove old embedded tests
+    + reproduce upstream test using tap
+  * Update copyright
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 31 Oct 2020 08:42:21 +0100
+
+node-json5 (0.5.1-3) unstable; urgency=medium
+
+  * Team upload
+  * Improve test
+  * Add fix for mocha ≥ 6 (fixes debci)
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 03 Feb 2020 14:00:56 +0100
+
+node-json5 (0.5.1-2) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.5.0
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * Use pkg-js-tools auto test & install
+  * Add patch description
+  * Update VCS fields to salsa
+  * Disable one error test that fails with Node.js ≥ 12
+  * Update homepage
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 22 Jan 2020 22:30:20 +0100
+
+node-json5 (0.5.1-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * Modernize packaging (change section, bump standards, bump compat)
+  * Enable tests (disable failing tests)
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 09 Feb 2018 19:51:52 +0530
+
+node-json5 (0.5.0-1) unstable; urgency=medium
+
+  * Initial release
+
+ -- Thorsten Alteholz <debian@alteholz.de>  Sat, 12 Nov 2016 15:05:31 +0100

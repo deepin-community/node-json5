@@ -1,0 +1,6 @@
+version=4
+opts=\
+dversionmangle=auto,\
+repacksuffix=+dfsg,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-json5-$1/ \
+ https://github.com/aseemk/json5/tags .*/archive/.*/v?([\d\.]+).tar.gz
