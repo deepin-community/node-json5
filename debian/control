@@ -7,12 +7,11 @@ Priority: optional
 Build-Depends: debhelper-compat (= 13)
  , dh-sequence-nodejs
  , help2man <!nodoc>
- , node-minimist <!nocheck>
  , node-regenerate
  , node-sinon <!nocheck>
  , node-tap <!nocheck>
- , node-unicode-14.0.0
-Standards-Version: 4.6.0
+ , node-unicode-15.0.0
+Standards-Version: 4.6.2
 Vcs-Browser: https://salsa.debian.org/js-team/node-json5
 Vcs-Git: https://salsa.debian.org/js-team/node-json5.git
 Homepage: https://json5.org/
@@ -21,7 +20,6 @@ Rules-Requires-Root: no
 Package: node-json5
 Architecture: all
 Depends: ${misc:Depends}
- , node-minimist
  , nodejs:any
 Multi-Arch: foreign
 Description: JSON for the ES5 era
