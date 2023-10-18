@@ -2,8 +2,6 @@ const assert = require('assert')
 const sinon = require('sinon')
 const JSON5 = require('../lib')
 
-require('tap').mochaGlobals()
-
 const t = require('tap')
 
 t.test('parse(text)', t => {
@@ -48,6 +46,13 @@ t.test('parse(text)', t => {
             JSON5.parse('{\\u0061\\u0062:1,\\u0024\\u005F:2,\\u005F\\u0024:3}'),
             {ab: 1, $_: 2, _$: 3},
             'parses escaped property names'
+        )
+
+        t.strictSame(
+            // eslint-disable-next-line no-proto
+            JSON5.parse('{"__proto__":1}').__proto__,
+            1,
+            'preserves __proto__ property names'
         )
 
         t.strictSame(

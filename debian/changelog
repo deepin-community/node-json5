@@ -1,3 +1,28 @@
+node-json5 (2.2.3+dfsg-1) unstable; urgency=medium
+
+  * Team upload
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository-Browse
+  * Update standards version to 4.6.2, no changes needed
+  * New upstream version (Closes: #1027145, CVE-2022-46175)
+
+ -- Yadd <yadd@debian.org>  Sun, 01 Jan 2023 16:28:09 +0400
+
+node-json5 (2.2.1+dfsg-2) unstable; urgency=medium
+
+  * Team upload
+  * Update to node-unicode-15.0.0
+
+ -- Yadd <yadd@debian.org>  Fri, 16 Sep 2022 18:10:00 +0200
+
+node-json5 (2.2.1+dfsg-1) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.6.1
+  * New upstream version 2.2.1+dfsg
+  * Drop dependency to node-minimist
+
+ -- Yadd <yadd@debian.org>  Mon, 29 Aug 2022 16:58:15 +0200
+
 node-json5 (2.2.0+dfsg-1) unstable; urgency=medium
 
   * Team upload
